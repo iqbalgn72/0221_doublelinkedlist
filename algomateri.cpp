@@ -28,5 +28,9 @@ if (START == NULL || newNode ->noMhs <= START->noMhs) {
     if (START != NULL) {
         START->prev = newNode;
     }
+   newNode->prev =NULL;
+   START = newNode; 
+}
+else{
     
 }
