@@ -170,6 +170,27 @@ void retraverse()
     }
 }
 
+void searchData()
+{
+    if (ListEmpty() == true)
+    {
+        cout << "\nList is empty" << endl;
+    }
+    Node *prev, *curr;
+    prev = curr = NULL;
+    cout << "\nEnter the roll number of the student whose record you want to search: ";
+    int num;
+    cin >> num;
+    if (search(num, &prev, &curr) == false)
+        cout << "\nRecord not found" << endl;
+    else
+    {
+        cout << "\nRecord found" << endl;
+        cout << "\nRoll number: " << endl;
+        cout << "\nName: " << endl;
+    }
+}
+
 
 
 
